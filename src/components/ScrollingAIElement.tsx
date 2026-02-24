@@ -1,5 +1,5 @@
 // components/ScrollingAIElement.tsx
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 
 const ScrollingAIElement = () => {
@@ -33,19 +33,6 @@ const ScrollingAIElement = () => {
     [1, 1, 0.8, 0.3],
   );
   const blur = useTransform(smoothProgress, [0, 0.7, 1], [0, 2, 4]);
-
-  // Glow effect based on scroll
-  const glowColor = useTransform(
-    smoothProgress,
-    [0, 0.25, 0.5, 0.75, 1],
-    [
-      "rgba(0,255,255,0.5)",
-      "rgba(255,0,255,0.5)",
-      "rgba(0,255,255,0.5)",
-      "rgba(255,255,0,0.5)",
-      "rgba(255,0,255,0.5)",
-    ],
-  );
 
   return (
     <div
