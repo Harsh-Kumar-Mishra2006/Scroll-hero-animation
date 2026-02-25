@@ -1,4 +1,3 @@
-import React from "react";
 import HeroSection from "./components/ui/HeroSection";
 import History from "./pages/History";
 import Statistics from "./pages/Statistics";

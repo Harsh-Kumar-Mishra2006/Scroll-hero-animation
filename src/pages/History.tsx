@@ -1,5 +1,5 @@
 // pages/History.tsx
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import TechBackground from "../components/ui/TechBackground";

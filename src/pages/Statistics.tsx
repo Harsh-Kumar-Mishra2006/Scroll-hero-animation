@@ -48,7 +48,7 @@ const Statistics = () => {
     // GSAP Animations
     const ctx = gsap.context(() => {
       // Animate stats cards on scroll
-      gsap.utils.toArray<HTMLElement>(".stat-card").forEach((card, i) => {
+      gsap.utils.toArray<HTMLElement>(".stat-card").forEach((card) => {
         gsap.fromTo(
           card,
           {

@@ -1,5 +1,5 @@
 // pages/Applications.tsx
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -25,7 +25,7 @@ const Applications = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       // Animate sector cards
-      gsap.utils.toArray<HTMLElement>(".sector-card").forEach((card, i) => {
+      gsap.utils.toArray<HTMLElement>(".sector-card").forEach((card) => {
         gsap.fromTo(
           card,
           {
@@ -49,7 +49,7 @@ const Applications = () => {
       });
 
       // Animate benefit cards
-      gsap.utils.toArray<HTMLElement>(".benefit-card").forEach((card, i) => {
+      gsap.utils.toArray<HTMLElement>(".benefit-card").forEach((card) => {
         gsap.fromTo(
           card,
           {
@@ -114,7 +114,7 @@ const Applications = () => {
 
         {/* Sectors Grid */}
         <div className="space-y-20 mb-20">
-          {aiApplications.map((sector, sectorIndex) => (
+          {aiApplications.map((sector) => (
             <motion.div
               key={sector.sector}
               className="sector-card"
@@ -266,7 +266,6 @@ const Applications = () => {
           className="relative rounded-3xl overflow-hidden p-12 text-center
                      bg-gradient-to-r from-cyan-500/10 via-purple-500/10 to-pink-500/10
                      border border-white/10 backdrop-blur-xl"
-          whileInView={{ scale: 1 }}
           initial={{ scale: 0.9, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}

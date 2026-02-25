@@ -6,7 +6,7 @@ interface BgElementsProps {
   scrollProgress: number;
 }
 
-const BgElements: React.FC<BgElementsProps> = ({ scrollProgress }) => {
+const BgElements: React.FC<BgElementsProps> = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll();
   const smoothScroll = useSpring(scrollYProgress, {
