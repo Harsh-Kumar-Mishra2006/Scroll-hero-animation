@@ -1,8 +1,7 @@
-# 🤖 AI Chronicles
+# 🤖 Scroll Hero Animation
 
 <div align="center">
 
-![Scroll Hero Animation](https://via.placeholder.com/1200x400/1a1a2e/00ffff?)
 
 **An immersive, animated web experience exploring the evolution, statistics, and applications of Artificial Intelligence**
 
@@ -87,5 +86,3 @@ The project features **cinematic scroll animations**, **floating 3D elements**, 
 | **Vite**          | Build Tool                   |
 
 ---
-
-## 📁 Project Structure
